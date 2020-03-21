@@ -1,14 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net471</TargetFramework>
+    <TargetFramework>net462</TargetFramework>
     <MonoGamePlatform>DesktopGL</MonoGamePlatform>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MonoGame\MonoGame.Framework\MonoGame.Framework.Bridge.csproj">
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="MonoGame.Content.Builder" Version="3.7.0.9" />
+    <PackageReference Include="MonoGameBridge" Version="3.7.0.3" />
     <PackageReference Include="Retyped.dom" Version="2.8.6733" />
     <PackageReference Include="Bridge" Version="17.2.0" />
   </ItemGroup>
@@ -20,5 +17,9 @@
 
   <ItemGroup>
     <MonoGameContentReference Include="**\*.mgcb" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MonoGame\MonoGame.Framework\MonoGame.Framework.Bridge.csproj" />
   </ItemGroup>
 </Project>
