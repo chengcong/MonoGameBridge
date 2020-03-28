@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>MonoGameBridge</Name>
+    <Description>MonoGame转Html+js项目模板</Description>
+    <Icon>MonoGameBridgeTemplate.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>MonoGame</ProjectSubType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>3c584c62-6d85-48d6-aa64-a540e20dd036</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>MonoGameBridgeProject</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  
+  <TemplateContent>
+    <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
+      <Folder Name="Content" TargetFolderName="Content">
+        <ProjectItem ReplaceParameters="false" TargetFileName="Content.mgcb">Content.mgcb</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="panda.jpg">panda.jpg</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">App.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Game1.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">bridge.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">index.html</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

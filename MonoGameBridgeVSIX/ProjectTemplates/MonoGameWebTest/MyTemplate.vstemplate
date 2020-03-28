@@ -1,0 +1,52 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>MonoGameWebTest</Name>
+    <Description>&lt;没有可用的说明&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>MonoGameWebTest</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="MonoGameWebTest.csproj" File="MonoGameWebTest.csproj" ReplaceParameters="true">
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="launchSettings.json">launchSettings.json</ProjectItem>
+      </Folder>
+      <Folder Name="Content" TargetFolderName="Content">
+        <Folder Name="bin" TargetFolderName="bin">
+          <Folder Name="DesktopGL" TargetFolderName="DesktopGL">
+            <Folder Name="Content" TargetFolderName="Content">
+              <ProjectItem ReplaceParameters="false" TargetFileName="panda.xnb">panda.xnb</ProjectItem>
+            </Folder>
+          </Folder>
+          <ProjectItem ReplaceParameters="false" TargetFileName="panda.xnb">panda.xnb</ProjectItem>
+        </Folder>
+        <Folder Name="obj" TargetFolderName="obj">
+          <Folder Name="DesktopGL" TargetFolderName="DesktopGL">
+            <Folder Name="Content" TargetFolderName="Content">
+              <ProjectItem ReplaceParameters="false" TargetFileName=".mgcontent">.mgcontent</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="panda.mgcontent">panda.mgcontent</ProjectItem>
+            </Folder>
+          </Folder>
+          <ProjectItem ReplaceParameters="false" TargetFileName=".mgcontent">.mgcontent</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName=".mgstats">.mgstats</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="panda.mgcontent">panda.mgcontent</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Content.mgcb">Content.mgcb</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="panda.jpg">panda.jpg</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.cs">App.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="bridge.json">bridge.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Game1.cs">Game1.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="index.html">index.html</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="index.html">vstg0001.html</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
