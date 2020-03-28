@@ -6,6 +6,7 @@
         <Description xml:space="preserve">MonoGame转Html+js项目模板</Description>
         <MoreInfo>http://www.xnadevelop.com</MoreInfo>
         <Icon>VSIXLogo.png</Icon>
+        <Tags>MonoGame</Tags>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0, 17.0)" />
